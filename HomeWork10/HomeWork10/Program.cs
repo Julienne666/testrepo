@@ -6,6 +6,7 @@ using HomeWork10.Services.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Sockets;
+
 void ConfigureServices(ServiceCollection serviceCollection, IConfiguration configuration)
     {
         serviceCollection.AddOptions<LoggerOption>().Bind(configuration.GetSection("Logger"));
